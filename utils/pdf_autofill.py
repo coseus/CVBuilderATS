@@ -172,7 +172,7 @@ def _dedupe_doubled_chars(s: str) -> str:
     parts = re.split(r"(\s+)", s)
     parts = [dedupe_token(p) if not p.isspace() else p for p in parts]
     
-    return ""out.join(parts)
+    return "".out.join(parts)
 
 # -----------------------------
 # Block extraction (multi-layout)
