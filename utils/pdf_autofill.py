@@ -233,8 +233,7 @@ def _extract_blocks(text: str) -> Dict[str, any]:
 
     # URLs
     urls = _extract_contact_urls(text)
-    if isinstance(urls, dict):
-        blocks.update(urls)
+    blocks.update(urls if isinstance(urls, dict) else {})
 
     # About me / Despre mine / Summary
     about = ""
