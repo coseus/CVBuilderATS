@@ -92,6 +92,20 @@ def _extract_contact_urls(text: str) -> Dict[str, str]:
         r"(?<!@)\b(?:https?://)?(?:www\.)?[a-z0-9][a-z0-9\-]+\.[a-z]{2,}(?:/[^\s\)\],;]+)?\b",
         lower
     )
+        # Blocklist for common CV platform footers / mail providers
+    blocked_domains = {
+        "ejobs.ro", "www.ejobs.ro",
+        "contact@ejobs.ro",
+        "linkedin.com", "github.com",  # we store these separately
+        "yahoo.com", "gmail.com", "outlook.com", "hotmail.com", "live.com", "icloud.com"
+    }
+
+    if website:
+        dom = website.lower().replace("https://", "").replace("http://", "")
+        dom = dom.replace("www.", "")
+        dom = dom.split("/")[0]
+        if dom in blocked_domains or "ejobs.ro" in dom:
+            website = ""
 
     if candidates:
         for c in candidates:
@@ -137,8 +151,7 @@ def _dedupe_doubled_chars(s: str) -> str:
     Fix PDFs that extract text with each character duplicated:
     Works for whole strings and for individual tokens.
     """
-    s = s or ""
-    s = s.strip()
+    s = (s or "").strip()
     if len(s) < 4:
         return s
 
@@ -158,8 +171,8 @@ def _dedupe_doubled_chars(s: str) -> str:
     # apply per-token (keeps punctuation)
     parts = re.split(r"(\s+)", s)
     parts = [dedupe_token(p) if not p.isspace() else p for p in parts]
-    out = "".join(parts)
-    return out
+    
+    return out.join(parts)
 
 # -----------------------------
 # Block extraction (multi-layout)
