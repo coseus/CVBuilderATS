@@ -16,15 +16,17 @@ from components.profile_manager import render_profile_manager
 from components.ats_dashboard import render_ats_score_dashboard
 from components.ats_optimizer import render_ats_optimizer
 from components.europass_complete import render_europass_complete
+from components.ats_optimizer import render_jd_ml_offline_panel
+from components.job_profile_manager import render_job_profile_manager
 
 from utils.json_io import import_cv_json, export_cv_json
 from utils.profiles import ProfileError, load_profile
+from utils.pdf_autofill import file_to_cv
+from utils.session import init_session_state, reset_everything, clear_runtime_only, reset_ats_only
 
 from exporters.pdf_generator import generate_pdf_modern, generate_pdf_europass
 from exporters.docx_generator import generate_docx_modern, generate_docx_europass
-from components.ats_optimizer import render_jd_ml_offline_panel
-from utils.session import init_session_state, reset_everything, clear_runtime_only, reset_ats_only
-from components.job_profile_manager import render_job_profile_manager
+
 
 # ====== Optional PDF Autofill ======
 PDF_AUTOFILL_AVAILABLE = True
