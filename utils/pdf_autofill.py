@@ -65,30 +65,31 @@ def _looks_like_name(line: str) -> bool:
 
 def _extract_contact_urls(text: str) -> Dict[str, str]:
     """
-    Extract linkedin/github/website from raw text using loose patterns.
+    Extract linkedin/github/website from raw text using robust patterns.
+    Always returns a dict.
     """
-    lower = text.lower()
+    txt = text or ""
+    lower = txt.lower()
 
-    # linkedin
-    linkedin = _find_first(r"(https?://)?(www\.)?linkedin\.com/[^\s]+", text)
+    def find_full(rx: str) -> str:
+        m = re.search(rx, txt, flags=re.IGNORECASE)
+        return _normalize_url(m.group(0)) if m else ""
+
+    # LinkedIn / GitHub (full match, not group(1))
+    linkedin = find_full(r"(?:https?://)?(?:www\.)?linkedin\.com/[^\s\)\],;]+")
+    github = find_full(r"(?:https?://)?(?:www\.)?github\.com/[^\s\)\],;]+")
+
+    # Normalize display (keep without scheme to be ATS-friendly if you prefer)
     if linkedin:
-        linkedin = _normalize_url(linkedin)
-        if not linkedin.startswith("http"):
-            linkedin = "linkedin.com/" + linkedin.split("linkedin.com/", 1)[-1]
-
-    # github
-    github = _find_first(r"(https?://)?(www\.)?github\.com/[^\s]+", text)
+        linkedin = linkedin.replace("https://", "").replace("http://", "").rstrip("/")
     if github:
-        github = _normalize_url(github)
-        if not github.startswith("http"):
-            github = "github.com/" + github.split("github.com/", 1)[-1]
+        github = github.replace("https://", "").replace("http://", "").rstrip("/")
 
-    # website (basic)
-    website = None
-
-    # IMPORTANT: avoid matching domains inside emails (negative lookbehind for '@')
+    # Website:
+    # Avoid email domains: negative lookbehind for '@'
+    website = ""
     candidates = re.findall(
-        r"(?<!@)\b(?:https?://)?(?:www\.)?[a-z0-9][a-z0-9\-]+\.[a-z]{2,}(?:/[^\s]+)?\b",
+        r"(?<!@)\b(?:https?://)?(?:www\.)?[a-z0-9][a-z0-9\-]+\.[a-z]{2,}(?:/[^\s\)\],;]+)?\b",
         lower
     )
 
@@ -97,18 +98,22 @@ def _extract_contact_urls(text: str) -> Dict[str, str]:
             if "linkedin.com" in c or "github.com" in c:
                 continue
             website = _normalize_url(c)
+            website = website.replace("https://", "").replace("http://", "").rstrip("/")
             break
 
-    # Extra guard: if website equals email domain, drop it
-    # (we don't have email here; we'll drop common mail domains anyway)
+    # Drop common mail providers that slip through
     mail_domains = {"yahoo.com", "gmail.com", "outlook.com", "hotmail.com", "live.com", "icloud.com"}
     if website:
-        dom = website.lower()
-        dom = dom.replace("https://", "").replace("http://", "")
-        dom = dom.replace("www.", "")
-        dom = dom.split("/")[0]
+        dom = website.lower().replace("www.", "").split("/")[0]
         if dom in mail_domains:
             website = ""
+
+    return {
+        "linkedin": linkedin or "",
+        "github": github or "",
+        "website": website or "",
+    }
+
 
 
 
@@ -228,7 +233,8 @@ def _extract_blocks(text: str) -> Dict[str, any]:
 
     # URLs
     urls = _extract_contact_urls(text)
-    blocks.update(urls)
+    if isinstance(urls, dict):
+        blocks.update(urls)
 
     # About me / Despre mine / Summary
     about = ""
