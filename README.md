@@ -207,3 +207,24 @@ streamlit run app.py
 - [ ]  Cover Letter generator
 - [ ]  LaTeX export
 - [ ]  Desktop builds (Windows / Linux)
+
+Build commands
+Windows
+``` bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements-build.txt
+pyinstaller cvbuilderats.spec --noconfirm
+```
+Linux
+``` bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-build.txt
+pyinstaller cvbuilderats.spec --noconfirm
+```
+
+Rezultatul va fi în:
+``` bash
+dist/CVBuilderATS/
+```
