@@ -13,7 +13,8 @@ except Exception:
 # Helpers
 # -----------------------------
 def _clean(s: str) -> str:
-    return re.sub(r"\s+", " ", (s or "")).strip()
+    s = re.sub(r"\s+", " ", (s or "")).strip()
+    return _dedupe_doubled_chars(s)
 
 
 def _clean_lines(text: str) -> List[str]:
@@ -84,24 +85,31 @@ def _extract_contact_urls(text: str) -> Dict[str, str]:
 
     # website (basic)
     website = None
-    # avoid matching linkedin/github again
-    candidates = re.findall(r"\b(?:https?://)?(?:www\.)?[a-z0-9][a-z0-9\-]+\.[a-z]{2,}(?:/[^\s]+)?", lower)
+
+    # IMPORTANT: avoid matching domains inside emails (negative lookbehind for '@')
+    candidates = re.findall(
+        r"(?<!@)\b(?:https?://)?(?:www\.)?[a-z0-9][a-z0-9\-]+\.[a-z]{2,}(?:/[^\s]+)?\b",
+        lower
+    )
+
     if candidates:
-        # choose first non-linkedin/non-github domain
         for c in candidates:
             if "linkedin.com" in c or "github.com" in c:
                 continue
             website = _normalize_url(c)
             break
-        if website and not website.startswith("http") and not website.startswith("www."):
-            # keep as domain/path
-            website = website
 
-    return {
-        "linkedin": linkedin or "",
-        "github": github or "",
-        "website": website or "",
-    }
+    # Extra guard: if website equals email domain, drop it
+    # (we don't have email here; we'll drop common mail domains anyway)
+    mail_domains = {"yahoo.com", "gmail.com", "outlook.com", "hotmail.com", "live.com", "icloud.com"}
+    if website:
+        dom = website.lower()
+        dom = dom.replace("https://", "").replace("http://", "")
+        dom = dom.replace("www.", "")
+        dom = dom.split("/")[0]
+        if dom in mail_domains:
+            website = ""
+
 
 
 def _make_contact_items(email: str, phone: str, location: str, linkedin: str, github: str, website: str) -> List[Dict]:
@@ -119,6 +127,34 @@ def _make_contact_items(email: str, phone: str, location: str, linkedin: str, gi
     add("website", website, "website")
     return items
 
+def _dedupe_doubled_chars(s: str) -> str:
+    """
+    Fix PDFs that extract text with each character duplicated:
+    Works for whole strings and for individual tokens.
+    """
+    s = s or ""
+    s = s.strip()
+    if len(s) < 4:
+        return s
+
+    def dedupe_token(tok: str) -> str:
+        t = tok.strip()
+        if len(t) >= 4 and len(t) % 2 == 0:
+            # if alternating chars are identical: t[0]==t[1], t[2]==t[3], ...
+            ok = True
+            for i in range(0, len(t), 2):
+                if t[i] != t[i + 1]:
+                    ok = False
+                    break
+            if ok:
+                return t[0::2]
+        return tok
+
+    # apply per-token (keeps punctuation)
+    parts = re.split(r"(\s+)", s)
+    parts = [dedupe_token(p) if not p.isspace() else p for p in parts]
+    out = "".join(parts)
+    return out
 
 # -----------------------------
 # Block extraction (multi-layout)
@@ -505,6 +541,8 @@ def text_to_cv(text: str, lang_hint: str = "en") -> Dict:
     linkedin = blocks.get("linkedin", "")
     github = blocks.get("github", "")
     website = blocks.get("website", "")
+    if email and website and website.lower().replace("www.", "") in email.lower():
+        website = ""
 
     contact_items = _make_contact_items(email, phone, location, linkedin, github, website)
 
