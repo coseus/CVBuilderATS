@@ -90,32 +90,118 @@ tab_import, tab_modern, tab_europass = st.tabs(["Import PDF (Autofill)", "Modern
 # TAB: Import PDF (Autofill)
 # --------------------------
 with tab_import:
-    st.info("Încarcă un CV PDF (RO/EN) și folosește Autofill. Apoi verifică în Modern/Europass.")
+    st.info("Încarcă un CV PDF sau DOCX (RO/EN) și folosește Autofill. Apoi verifică în Modern/Europass.")
     if not PDF_AUTOFILL_AVAILABLE:
-        st.warning("PDF Autofill indisponibil (utils/pdf_autofill.py import error sau lipsă dependență).")
+        st.warning("Autofill indisponibil (utils/pdf_autofill.py import error sau lipsă dependență).")
     else:
-        pdf_up = st.file_uploader("Upload CV PDF", type=["pdf"], key="pdf_upload")
+        up = st.file_uploader("Upload CV (PDF/DOCX)", type=["pdf", "docx"], key="pdf_upload")
+
         lang_hint = st.selectbox(
-            "PDF language hint",
+            "Document language hint",
             [("Auto/EN", "en"), ("Română", "ro")],
             format_func=lambda x: x[0],
             key="pdf_lang_hint",
         )[1]
 
-        if pdf_up is not None and st.button("Autofill from PDF", type="primary", key="btn_pdf_autofill"):
+        def _is_empty(val):
+            return val in (None, "", [], {}) or (isinstance(val, str) and not val.strip())
+
+        def _dedup_list_of_dicts(existing: list, incoming: list, key_fields: list):
+            """
+            Dedup by key_fields, preserving order: existing first, then new unique.
+            """
+            out = []
+            seen = set()
+
+            def make_key(d):
+                if not isinstance(d, dict):
+                    return None
+                parts = []
+                for k in key_fields:
+                    parts.append(str(d.get(k, "")).strip().lower())
+                return "|".join(parts)
+
+            for it in existing:
+                out.append(it)
+                k = make_key(it)
+                if k:
+                    seen.add(k)
+
+            for it in incoming:
+                k = make_key(it)
+                if k and k in seen:
+                    continue
+                out.append(it)
+                if k:
+                    seen.add(k)
+            return out
+
+        def merge_cv_safe(cv: dict, patch: dict):
+            """
+            Merge only useful extracted fields, without overwriting user's existing content.
+            - Strings: fill only if target empty
+            - Lists: if target empty -> set; else merge (dedup)
+            - Dicts: shallow-merge keys that are missing
+            """
+            if not isinstance(patch, dict):
+                return
+
+            for k, v in patch.items():
+                if _is_empty(v):
+                    continue
+
+                if k not in cv or _is_empty(cv.get(k)):
+                    cv[k] = v
+                    continue
+
+                # Merge lists
+                if isinstance(v, list) and isinstance(cv.get(k), list):
+                    # special dedup rules per field
+                    if k == "experienta":
+                        cv[k] = _dedup_list_of_dicts(cv[k], v, ["functie", "angajator", "perioada"])
+                    elif k == "educatie":
+                        cv[k] = _dedup_list_of_dicts(cv[k], v, ["titlu", "organizatie", "perioada"])
+                    elif k == "limbi_straine":
+                        cv[k] = _dedup_list_of_dicts(cv[k], v, ["limba"])
+                    elif k == "contact_items":
+                        cv[k] = _dedup_list_of_dicts(cv[k], v, ["type", "value"])
+                    elif k == "personal_info_extra":
+                        cv[k] = _dedup_list_of_dicts(cv[k], v, ["label", "value"])
+                    else:
+                        # generic: append new unique scalars/dicts by string value
+                        exist_set = set([str(x).strip().lower() for x in cv[k]])
+                        for it in v:
+                            if str(it).strip().lower() not in exist_set:
+                                cv[k].append(it)
+                                exist_set.add(str(it).strip().lower())
+                    continue
+
+                # Merge dicts shallowly
+                if isinstance(v, dict) and isinstance(cv.get(k), dict):
+                    for dk, dv in v.items():
+                        if _is_empty(dv):
+                            continue
+                        if _is_empty(cv[k].get(dk)):
+                            cv[k][dk] = dv
+                    continue
+
+                # Otherwise: keep user's current value (do nothing)
+
+        if up is not None and st.button("Autofill from file", type="primary", key="btn_pdf_autofill"):
             import tempfile, os
-            fd, path = tempfile.mkstemp(suffix=".pdf")
+            suffix = ".pdf" if up.name.lower().endswith(".pdf") else ".docx"
+            fd, path = tempfile.mkstemp(suffix=suffix)
             os.close(fd)
             with open(path, "wb") as f:
-                f.write(pdf_up.getvalue())
+                f.write(up.getvalue())
 
-            new_cv = pdf_to_cv(path, lang_hint=lang_hint)
+            # ✅ dispatcher: pdf OR docx
+            from utils.pdf_autofill import file_to_cv
 
-            # merge only non-empty extracted fields
-            for k, v in new_cv.items():
-                if v in (None, "", [], {}):
-                    continue
-                cv[k] = v
+            new_cv = file_to_cv(path, lang_hint=lang_hint)
+
+            # ✅ merge safe (doesn't overwrite user's existing content)
+            merge_cv_safe(cv, new_cv)
 
             clear_runtime_only()
             st.success("Autofill completed. Check Modern/Europass tabs.")
