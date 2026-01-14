@@ -149,7 +149,8 @@ def _make_contact_items(email: str, phone: str, location: str, linkedin: str, gi
 def _dedupe_doubled_chars(s: str) -> str:
     """
     Fix PDFs that extract text with each character duplicated:
-    Works for whole strings and for individual tokens.
+      'CCoossmmiinn' -> 'Cosmin'
+    Applies per token; preserves whitespace.
     """
     s = (s or "").strip()
     if len(s) < 4:
@@ -158,7 +159,6 @@ def _dedupe_doubled_chars(s: str) -> str:
     def dedupe_token(tok: str) -> str:
         t = tok.strip()
         if len(t) >= 4 and len(t) % 2 == 0:
-            # if alternating chars are identical: t[0]==t[1], t[2]==t[3], ...
             ok = True
             for i in range(0, len(t), 2):
                 if t[i] != t[i + 1]:
@@ -168,11 +168,9 @@ def _dedupe_doubled_chars(s: str) -> str:
                 return t[0::2]
         return tok
 
-    # apply per-token (keeps punctuation)
     parts = re.split(r"(\s+)", s)
     parts = [dedupe_token(p) if not p.isspace() else p for p in parts]
-    
-    return "".out.join(parts)
+    return "".join(parts)
 
 # -----------------------------
 # Block extraction (multi-layout)
