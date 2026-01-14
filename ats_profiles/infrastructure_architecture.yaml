@@ -1,0 +1,57 @@
+id: "infrastructure_architecture"
+title: "Infrastructure Architecture"
+job_titles:
+- "Infrastructure Architect"
+- "Solutions Architect (Infra)"
+- "Enterprise Architect"
+
+section_priority:
+- "Summary"
+- "Technical Skills"
+- "Professional Experience"
+- "Projects"
+- "Certifications"
+- "Education"
+
+keywords:
+  core:
+    - "Design Patterns"
+    - "Scalability"
+    - "High Availability"
+    - "Hybrid Cloud Architecture"
+  technologies:
+    - "Design Patterns"
+    - "Scalability"
+    - "High Availability"
+    - "Hybrid Cloud Architecture"
+  tools:
+    - ""
+  certifications:
+    - ""
+  frameworks:
+    - ""
+  soft_skills:
+    - ""
+
+action_verbs:
+- "Designed"
+- "Architected"
+- "Evaluated"
+- "Recommended"
+
+metrics:
+- "projects_delivered"
+- "architecture_adoption"
+
+bullet_templates:
+- "Architected hybrid infrastructure supporting {count} critical applications."
+- "Improved {metric} by {percentage}% by implementing {tool} across {scope}."
+- "Reduced {metric} by {percentage}% through automation using {tool} and standardized runbooks."
+
+template_placeholders:
+  - "tool"
+  - "scope"
+  - "metric"
+  - "percentage"
+  - "count"
+  - "time"

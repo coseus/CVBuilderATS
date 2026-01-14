@@ -1,0 +1,61 @@
+id: "hybrid_modern_infrastructure"
+title: "Hybrid & Modern Infrastructure"
+job_titles:
+- "Hybrid Cloud Engineer"
+- "M365 Administrator"
+- "Endpoint Engineer"
+- "Modern Workplace Specialist"
+
+section_priority:
+- "Summary"
+- "Technical Skills"
+- "Professional Experience"
+- "Projects"
+- "Certifications"
+- "Education"
+
+keywords:
+  core:
+    - "Microsoft 365 / Entra ID"
+    - "Intune"
+    - "Azure AD"
+    - "Hybrid Join"
+  technologies:
+    - "Microsoft 365 / Entra ID"
+    - "Intune"
+    - "Azure AD"
+    - "Hybrid Join"
+  tools:
+    - "PowerShell"
+    - "Autopilot"
+    - "Jamf (for Mac)"
+  certifications:
+    - ""
+  frameworks:
+    - ""
+  soft_skills:
+    - ""
+
+action_verbs:
+- "Configured"
+- "Migrated"
+- "Managed"
+- "Secured"
+
+metrics:
+- "devices_managed"
+- "adoption_rate"
+- "security_compliance"
+
+bullet_templates:
+- "Managed {count} endpoints in hybrid environment with Intune."
+- "Improved {metric} by {percentage}% by implementing {tool} across {scope}."
+- "Reduced {metric} by {percentage}% through automation using {tool} and standardized runbooks."
+
+template_placeholders:
+  - "tool"
+  - "scope"
+  - "metric"
+  - "percentage"
+  - "count"
+  - "time"

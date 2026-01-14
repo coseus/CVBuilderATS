@@ -1,0 +1,33 @@
+job_titles:
+  - Storage Engineer
+  - Backup Administrator
+  - Disaster Recovery Specialist
+
+keywords:
+  tools:
+    - NetApp
+    - Dell EMC
+    - Veeam
+    - Cohesity
+    - Rubrik
+
+action_verbs:
+  - Managed
+  - Configured
+  - Tested
+  - Recovered
+
+metrics:
+  - backup_success_rate
+  - recovery_time_objective
+
+bullet_templates:
+  - "Managed enterprise storage and backups with {percentage}% success rate."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education

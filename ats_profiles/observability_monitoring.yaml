@@ -1,0 +1,57 @@
+id: "observability_monitoring"
+title: "Observability & Monitoring"
+job_titles:
+- "Observability Engineer"
+- "Monitoring Specialist"
+- "AIOps Engineer"
+
+section_priority:
+- "Summary"
+- "Technical Skills"
+- "Professional Experience"
+- "Projects"
+- "Certifications"
+- "Education"
+
+keywords:
+  core:
+    - ""
+  technologies:
+    - ""
+  tools:
+    - "Prometheus"
+    - "Grafana"
+    - "ELK Stack"
+    - "Datadog"
+    - "Splunk"
+    - "New Relic"
+  certifications:
+    - ""
+  frameworks:
+    - ""
+  soft_skills:
+    - ""
+
+action_verbs:
+- "Implemented"
+- "Monitored"
+- "Alerted"
+- "Analyzed"
+
+metrics:
+- "alert_accuracy"
+- "mean_time_to_detect"
+- "coverage_percentage"
+
+bullet_templates:
+- "Built observability stack improving MTTD by {percentage}%."
+- "Improved {metric} by {percentage}% by implementing {tool} across {scope}."
+- "Reduced {metric} by {percentage}% through automation using {tool} and standardized runbooks."
+
+template_placeholders:
+  - "tool"
+  - "scope"
+  - "metric"
+  - "percentage"
+  - "count"
+  - "time"

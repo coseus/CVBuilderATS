@@ -1,0 +1,59 @@
+job_titles:
+  - System Administrator
+  - Linux System Administrator
+  - Windows System Administrator
+  - Server Administrator
+  - Infrastructure Engineer
+
+keywords:
+  operating_systems:
+    - Windows Server
+    - Linux (RHEL, Ubuntu, CentOS)
+    - Active Directory
+    - PowerShell
+    - Bash
+  technologies:
+    - Virtualization (VMware, Hyper-V)
+    - Patch Management
+    - Backup & Recovery
+    - User Management
+    - Server Hardening
+  tools:
+    - Ansible
+    - Puppet
+    - SCCM
+    - Zabbix
+    - Veeam
+    - Nagios
+
+action_verbs:
+  - Managed
+  - Configured
+  - Maintained
+  - Automated
+  - Troubleshot
+  - Upgraded
+  - Secured
+  - Monitored
+  - Deployed
+  - Documented
+
+metrics:
+  - server_uptime_percentage
+  - tickets_resolved
+  - patch_compliance_rate
+  - backup_success_rate
+  - mttr_hours
+  - systems_managed
+
+bullet_templates:
+  - "Managed {count} servers with {percentage}% uptime, supporting daily operations."
+  - "Automated patching and backups, reducing manual effort by {hours} hours/week."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
