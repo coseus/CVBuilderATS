@@ -1,120 +1,209 @@
-# Streamlit CV Builder (Modern ATS + Europass)
+# CV Builder – Modern (ATS-Friendly) & Europass
 
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
-![Streamlit](https://img.shields.io/badge/streamlit-app-red)
-![License: MIT](https://img.shields.io/badge/license-MIT-green)
+🚀 **CV Builder** is a Streamlit-based web application that helps you **create, optimize, import, and export CVs** in two professional formats:
 
-Two-tab CV builder built with **Streamlit**:
-- **Modern (ATS-friendly)**: short, single-column layout, keyword-dense, recruiter-friendly.
-- **Europass**: full Europass-style form with all fields.
+- **Modern (ATS-Friendly)** – optimized for Applicant Tracking Systems and recruiters
+- **Europass (Complete)** – compliant with the official Europass structure
 
-## Features
-### Modern (ATS-friendly)
-- One-column structure (better for ATS parsing)
-- **Professional Summary** with bullet support
-- **Skills (ATS-friendly)**: headline + tools + certifications + extra keywords
-- **Projects / Experience** with:
-  - period, role/title, bullets (impact), tools/tech, optional link
-  - reorder (move up/down) + delete
-- **ATS Optimizer**:
-  - paste a Job Description
-  - see matched vs missing keywords
-  - one-click add missing keywords into “Extra keywords”
-- **ATS Profiles (editable YAML)**:
-  - select profile (Cyber Security / System Admin / Network Admin)
-  - preview + edit + save-as from the UI
-- **ATS Score Dashboard**:
-  - profile keyword coverage, JD match, metrics coverage, verb variety, completeness
-- **Auto-rewrite bullets** (deterministic):
-  - suggests better verbs + adds metric prompts
-  - can insert bullet templates from the selected profile
-- Exports:
-  - **PDF Modern**
-  - **Word Modern**
-  - **ATS plain-text (.txt)**
-
-> Tip: Photo is **off by default** for Modern export (recommended for ATS).
-
-### Europass
-- Personal info, photo, experience, education, languages, competences
-- Exports:
-  - **PDF Europass**
-  - **Word Europass**
+The app supports **PDF & DOCX autofill**, **offline ATS optimization**, **job-specific keyword matching**, and export to **PDF, Word, TXT, and JSON**.
 
 ---
 
-## Run locally
+## ✨ Key Features
+
+### 🧩 CV Editing
+
+- Full CRUD support (Add / Edit / Delete) for:
+    - Personal Information
+    - Professional Summary (bullet-based, ATS-friendly)
+    - Professional Experience / Projects
+    - Education
+    - Skills (structured for ATS)
+    - Languages
+    - Europass personal competencies
+- **Short profile line under name**
+    
+    Example:
+    
+    `Senior System Administrator | Cloud & Security | 17+ years experience`
+    
+
+---
+
+### 📄 CV Import (Autofill)
+
+- Import CVs from:
+    - **PDF** (eJobs, Europass, classic CV layouts)
+    - **DOCX**
+- Smart autofill engine:
+    - fixes duplicated characters from PDFs (`CCoossmmiinn → Cosmin`)
+    - ignores platform footers (e.g. `www.ejobs.ro`)
+    - safe merge (never overwrites manually filled fields)
+
+---
+
+### 🤖 ATS Optimizer (Offline)
+
+- Editable **ATS Profiles (YAML)**
+- Offline **Job Description Analyzer**
+- Keyword matching & coverage score
+- Missing keywords detection
+- Bullet rewrite templates
+- Visual ATS score dashboard
+
+> 🔐 No external APIs. Everything runs locally/offline.
+> 
+
+---
+
+### 📤 Export Options
+
+- PDF – Modern
+- PDF – Europass
+- Word – Modern
+- Word – Europass
+- ATS `.txt` (plain text, copy-paste friendly)
+- Import / Export full CV as **JSON**
+
+---
+
+### 🔄 Reset & Persistence
+
+- **Reset Everything**
+- **Reset ATS / Job Description only**
+- Persistent ATS profile per job
+
+---
+
+## 🧠 ATS Profiles
+
+ATS profiles are stored as editable YAML files:
+
+```
+ats_profiles/
+
+```
+
+Examples:
+
+- `cyber_security.yaml`
+- `network_administrator.yaml`
+- `cloud_engineer.yaml`
+- `devops_platform_engineering.yaml`
+
+Each profile defines:
+
+- job titles
+- keywords (structured & categorized)
+- action verbs
+- metrics
+- bullet rewrite templates
+
+👉 Profiles can be **selected, previewed, edited, and duplicated directly from the UI**.
+
+---
+
+## 🗂️ Project Structure
+
+```
+cvbuilderats/
+├── app.py
+├── components/
+│   ├── personal_info_shared.py
+│   ├── work_experience.py
+│   ├── education.py
+│   ├── skills.py
+│   ├── ats_optimizer.py
+│   ├── ats_dashboard.py
+│   └── profile_manager.py
+├── exporters/
+│   ├── pdf_generator.py
+│   └── docx_generator.py
+├── utils/
+│   ├──session.py
+│   ├── json_io.py
+│   ├── profiles.py
+│   └── pdf_autofill.py
+├── ats_profiles/
+├── requirements.txt
+└── README.md
+
+```
+
+---
+
+## ▶️ Run Locally
+
+### 1️⃣ Clone the repository
+
+```bash
+gitclone https://github.com/your-username/cvbuilderats.git
+cd cvbuilderats
+
+```
+
+### 2️⃣ Install dependencies
+
 ```bash
 pip install -r requirements.txt
+
+```
+
+### 3️⃣ Start the app
+
+```bash
 streamlit run app.py
-```
 
-## ATS Profiles
-Profiles live in `./ats_profiles/*.yaml` and are user-editable.
-
-Default profiles included:
-- `cyber_security`
-- `system_administrator`
-- `network_administrator`
-
-## Data model (in session)
-All data is stored in `st.session_state.cv` as a dictionary.
-
-Experience/Projects items (`cv['experienta']`) look like:
-```json
-{
-  "perioada": "2024–2025",
-  "functie": "Pentest Report Automation",
-  "activitati": "Built ...\nReduced time ...",
-  "angajator": "Freelance",
-  "sector": "",
-  "tehnologii": "Python, ReportLab, Streamlit",
-  "link": "https://github.com/..."
-}
 ```
 
 ---
 
-## ATS tips (quick checklist)
-- Use **standard headings**: Summary, Skills, Experience, Education
-- Avoid tables/columns/icons in the Modern version
-- Put important keywords in:
-  - Summary
-  - Skills tools list
-  - Project bullets (impact)
-- Add metrics where possible (time saved, users, %, volume, etc.)
+## ☁️ Deploy on Streamlit Cloud
+
+1. Push the repository to GitHub
+2. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
+3. Select the repo and `app.py`
+4. Deploy 🚀
+
+✅ Fully compatible with Streamlit Cloud.
 
 ---
 
-## Project structure
-```
-.
-├─ app.py
-├─ ats_profiles/
-│  ├─ cyber_security.yaml
-│  ├─ system_administrator.yaml
-│  └─ network_administrator.yaml
-├─ components/
-│  ├─ ats_optimizer.py
-│  ├─ ats_dashboard.py
-│  ├─ ats_rewrite.py
-│  ├─ profile_manager.py
-│  ├─ modern_skills.py
-│  ├─ personal_info.py
-│  ├─ photo_upload.py
-│  ├─ work_experience.py
-│  ├─ education.py
-│  ├─ languages.py
-│  └─ skills.py
-├─ exporters/
-│  ├─ pdf_generator.py
-│  └─ docx_generator.py
-└─ utils/
-   ├─ session.py
-   ├─ profiles.py
-   └─ ats_scoring.py
-```
+## 📥 JSON Import / Export
 
-## Contributing / License
-- See `CONTRIBUTING.md`
-- MIT License (`LICENSE`)
+- Stable and forward-compatible schema
+- Supports:
+    - full CV export
+    - optional photo (base64)
+- Ideal for:
+    - backups
+    - versioning
+    - migration between devices
+
+---
+
+## 🔐 Privacy & Security
+
+- No external services or APIs
+- ATS analysis is **100% offline**
+- No data leaves the app
+- Safe for real CVs and sensitive data
+
+---
+
+## 🧪 Known Limitations
+
+- PDF parsing depends on text-layer quality
+- Scanned PDFs (images) are not supported (no OCR yet)
+- ATS scoring is heuristic (not ML-based)
+
+---
+
+## 🛣️ Roadmap
+
+- [ ]  OCR support for scanned PDFs
+- [ ]  Skill gap suggestions
+- [ ]  Multiple CV variants per job
+- [ ]  Cover Letter generator
+- [ ]  LaTeX export
+- [ ]  Desktop builds (Windows / Linux)
