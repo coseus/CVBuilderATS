@@ -46,6 +46,8 @@ st.title("Coseus - CV Builder - Modern (ATS) vs Europass")
 # ==========================
 # Sidebar: Import/Export/Reset
 # ==========================
+sidebar_logo = "utils/coseus.png"
+st.logo(sidebar_logo, size="medium")
 st.sidebar.header("Import / Export")
 
 with st.sidebar.expander("Import CV (JSON)", expanded=False):
