@@ -41,7 +41,7 @@ st.set_page_config(page_title="Coseus - CV Builder - Modern & Europass", layout=
 init_session_state()
 cv = st.session_state.cv
 
-st.title("CV Builder - Modern (ATS) vs Europass")
+st.title("Coseus - CV Builder - Modern (ATS) vs Europass")
 
 # ==========================
 # Sidebar: Import/Export/Reset
