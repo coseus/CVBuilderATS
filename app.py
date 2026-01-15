@@ -36,7 +36,7 @@ except Exception:
     PDF_AUTOFILL_AVAILABLE = False
 
 
-st.set_page_config(page_title="Coseus - CV Builder - Modern & Europass", page_icon="utils/favicon.ico", layout="wide")
+st.set_page_config(page_title="Coseus - CV Builder - Modern & Europass", page_icon="utils/coseus.ico", layout="wide")
 
 init_session_state()
 cv = st.session_state.cv
