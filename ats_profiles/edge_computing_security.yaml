@@ -1,0 +1,33 @@
+job_titles:
+  - Edge Computing Security Engineer
+  - Edge Security Specialist
+
+keywords:
+  concepts:
+    - Edge Device Hardening
+    - Distributed Security
+    - Zero Trust Edge
+  tools:
+    - AWS IoT Greengrass
+    - Azure IoT Edge
+    - Kubernetes Edge
+
+action_verbs:
+  - Secured
+  - Deployed
+  - Monitored
+
+metrics:
+  - edge_nodes_protected
+  - latency_impact
+
+bullet_templates:
+  - "Implemented Zero Trust security for {count} edge computing nodes, minimizing latency while maintaining high security."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
