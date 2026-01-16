@@ -1,0 +1,42 @@
+job_titles:
+  - IoT Firmware Security Engineer
+  - Embedded Device Security Specialist
+  - Firmware Reverse Engineer (IoT)
+
+keywords:
+  practices:
+    - Secure Boot
+    - Firmware Signing
+    - OTA Security
+    - Binary Analysis
+  tools:
+    - Binwalk
+    - Ghidra
+    - IDA Pro
+    - Firmware Analysis Toolkit (FAT)
+    - FACT (Firmware Analysis and Comparison Tool)
+    - Microsoft Defender for IoT (firmware scanning)
+
+action_verbs:
+  - Analyzed
+  - Reverse Engineered
+  - Hardened
+  - Validated
+  - Secured
+
+metrics:
+  - firmware_vulnerabilities_discovered
+  - secure_boot_implementation_rate
+  - ota_update_success_rate
+
+bullet_templates:
+  - "Performed reverse engineering and security analysis on {count} IoT firmware images, identifying {count} critical vulnerabilities (CVSS > 9.0)."
+  - "Implemented secure boot and firmware signing mechanisms, ensuring {percentage}% of devices boot only verified images."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
