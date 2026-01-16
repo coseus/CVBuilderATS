@@ -1,0 +1,62 @@
+job_titles:
+  - IoT Security Specialist
+  - IoT Cybersecurity Engineer
+  - Connected Devices Security Analyst
+  - IoT Security Consultant
+
+keywords:
+  protocols:
+    - MQTT
+    - CoAP
+    - HTTP/HTTPS
+    - LoRaWAN
+    - Zigbee
+    - Bluetooth LE
+    - Matter
+  standards:
+    - ETSI EN 303 645
+    - IEC 62443
+    - NIST IoT Cybersecurity
+    - CSA IoT Security Controls
+    - PSA Certified
+  tools:
+    - Armis
+    - Claroty
+    - Nozomi Networks
+    - Forescout eyeSegment
+    - Microsoft Defender for IoT
+    - AWS IoT Device Defender
+    - Azure Defender for IoT
+    - Wireshark (IoT dissectors)
+    - Zeek (with IoT scripts)
+
+action_verbs:
+  - Assessed
+  - Secured
+  - Monitored
+  - Segmented
+  - Hardened
+  - Detected
+  - Remediated
+  - Implemented
+
+metrics:
+  - iot_devices_discovered
+  - vulnerabilities_identified
+  - false_positive_rate
+  - remediation_time_days
+  - compliance_coverage_percentage
+
+bullet_templates:
+  - "Conducted comprehensive IoT asset discovery using {tool}, identifying and classifying {count} previously unknown devices across enterprise network."
+  - "Implemented network segmentation and protocol enforcement for {count} IoT endpoints, reducing attack surface by {percentage}% and achieving ETSI EN 303 645 baseline compliance."
+  - "Deployed passive monitoring solution ({tool}) for real-time anomaly detection, identifying {count} suspicious behaviors and reducing incident response time by {percentage}%."
+  - "Hardened IoT firmware and communication channels, mitigating {count} high-severity vulnerabilities and ensuring secure MQTT/CoAP usage with mutual TLS."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
