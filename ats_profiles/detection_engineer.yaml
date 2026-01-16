@@ -1,0 +1,39 @@
+job_titles:
+  - Detection Engineer
+  - Security Detection Engineer
+  - Rule Developer (Detection)
+
+keywords:
+  tools:
+    - Splunk
+    - Elastic SIEM
+    - Microsoft Sentinel
+    - Sigma Rules
+  practices:
+    - Detection Engineering
+    - Use Case Development
+    - TTP Mapping
+
+action_verbs:
+  - Developed
+  - Tuned
+  - Implemented
+  - Tested
+  - Optimized
+
+metrics:
+  - detections_created
+  - false_positive_reduction
+  - coverage_improvement_percentage
+
+bullet_templates:
+  - "Developed {count} custom detection rules aligned with MITRE ATT&CK, improving coverage by {percentage}%."
+  - "Optimized SIEM detections reducing false positives by {percentage}% while maintaining high fidelity."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
