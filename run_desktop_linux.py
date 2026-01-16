@@ -44,34 +44,41 @@ def _find_free_port(preferred: int = 8501) -> int:
     return port
 
 
-def _open_browser_once(url: str, delay: float = 1.2) -> None:
-    time.sleep(delay)
-
-    # Lock per-port to avoid opening multiple tabs on reruns
-    lock_path = os.path.join(tempfile.gettempdir(), f"cvbuilderats_browser_open_{url.replace(':','_').replace('/','_')}.lock")
+def _single_instance_or_exit() -> None:
+    lock_path = os.path.join(tempfile.gettempdir(), "cvbuilderats_single_instance.lock")
     try:
         fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
         with os.fdopen(fd, "w", encoding="utf-8") as f:
-            f.write(url)
+            f.write(str(os.getpid()))
+        log(f"single-instance lock acquired: {lock_path}")
     except FileExistsError:
-        log("Browser lock exists; not opening new tab.")
-        return
-    except Exception as e:
-        log(f"Lock create failed: {e!r}")
-        return
+        log("single-instance lock exists; exiting.")
+        raise SystemExit(0)
 
-    try:
-        webbrowser.open(url)
-        log(f"Opened browser: {url}")
-    except Exception as e:
-        log(f"webbrowser.open failed: {e!r}")
+
+def _wait_for_port(port: int, timeout_s: float = 20.0) -> bool:
+    t0 = time.time()
+    while time.time() - t0 < timeout_s:
+        try:
+            with socket.create_connection(("127.0.0.1", port), timeout=0.3):
+                return True
+        except Exception:
+            time.sleep(0.25)
+    return False
+
+
+def _open_browser_when_ready(url: str, port: int) -> None:
+    if _wait_for_port(port, timeout_s=25.0):
+        try:
+            webbrowser.open(url)
+            log(f"Opened browser: {url}")
+        except Exception as e:
+            log(f"webbrowser.open failed: {e!r}")
+    else:
+        log(f"Server did not respond on port {port} in time. Open manually: {url}")
 
 
 def _write_streamlit_config(tmp_dir: str) -> str:
-    """
-    Create a local Streamlit config that forces non-dev mode and stable desktop settings.
-    Prevents conflicts with user's ~/.streamlit/config.toml
-    """
     cfg_dir = Path(tmp_dir) / "streamlit_cfg"
     cfg_dir.mkdir(parents=True, exist_ok=True)
     cfg_path = cfg_dir / "config.toml"
@@ -92,31 +99,27 @@ def _write_streamlit_config(tmp_dir: str) -> str:
             'fileWatcherType = "none"',
             "",
         ]),
-        encoding="utf-8"
+        encoding="utf-8",
     )
     return str(cfg_dir)
 
 
 def main():
-    # fresh log
-    try:
-        with open(_log_path(), "w", encoding="utf-8") as f:
-            f.write("CVBuilderATS Linux launcher starting...\n")
-            f.write(f"sys.executable={sys.executable}\n")
-            f.write(f"MEIPASS={getattr(sys, '_MEIPASS', '')}\n")
-    except Exception:
-        pass
+    with open(_log_path(), "w", encoding="utf-8") as f:
+        f.write("CVBuilderATS Linux launcher starting...\n")
 
     try:
+        _single_instance_or_exit()
+
         app_path = resource_path("app.py")
-        log(f"app_path={app_path}")
-
         preferred = int(os.environ.get("CVBUILDER_PORT", "8501"))
         port = _find_free_port(preferred)
         url = f"http://localhost:{port}"
+
+        log(f"app_path={app_path}")
         log(f"port={port} url={url}")
 
-        # Force non-dev mode + private config
+        # Force non-dev + private config (ignore user's ~/.streamlit)
         os.environ["STREAMLIT_GLOBAL_DEVELOPMENT_MODE"] = "false"
         os.environ["STREAMLIT_BROWSER_GATHER_USAGE_STATS"] = "false"
         os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
@@ -126,8 +129,8 @@ def main():
         os.environ["STREAMLIT_CONFIG_DIR"] = cfg_dir
         log(f"STREAMLIT_CONFIG_DIR={cfg_dir}")
 
-        # open browser once
-        threading.Thread(target=_open_browser_once, args=(url, 1.2), daemon=True).start()
+        # Open browser only when ready
+        threading.Thread(target=_open_browser_when_ready, args=(url, port), daemon=True).start()
 
         from streamlit.web import cli as stcli
 
@@ -146,10 +149,11 @@ def main():
         log("Starting Streamlit...")
         stcli.main()
 
+    except SystemExit:
+        pass
     except Exception:
         tb = traceback.format_exc()
         log("FATAL ERROR:\n" + tb)
-        # On Linux, print to stderr as last resort
         try:
             sys.stderr.write(tb + "\n")
         except Exception:
