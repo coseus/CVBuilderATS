@@ -1,0 +1,53 @@
+job_titles:
+  - IoT Penetration Tester
+  - IoT Ethical Hacker
+  - Connected Devices Pentester
+  - Hardware & Firmware Penetration Tester (IoT)
+
+keywords:
+  testing_phases:
+    - Firmware Extraction & Reverse Engineering
+    - Hardware Interfaces Pentest (UART, JTAG, SPI, I2C)
+    - Wireless Attacks (BLE, Zigbee, Wi-Fi, Sub-GHz)
+    - Web/API Testing on IoT Devices
+    - Physical Tampering & Side-Channel Attacks
+  standards:
+    - OWASP IoT Top 10
+    - IoT Penetration Testing Guide (OWASP ISTG)
+    - PTES / OSSTMM adapted for IoT
+  tools:
+    - Hardware: Flipper Zero, HackRF One, Proxmark3, Bus Pirate, ChipWhisperer (side-channel)
+    - Firmware: Binwalk, Ghidra, IDA Pro, Firmware Analysis Toolkit (FAT)
+    - Wireless: Ubertooth One (BLE), KillerBee (Zigbee), Wireshark (with IoT dissectors)
+    - Software: Burp Suite (for IoT web interfaces), Metasploit (IoT modules), sqlmap, Nmap
+    - General: Raspberry Pi (custom attack platforms), Logic Analyzer
+
+action_verbs:
+  - Extracted
+  - Reverse Engineered
+  - Exploited
+  - Tested
+  - Assessed
+  - Demonstrated
+  - Reported
+  - Chained
+
+metrics:
+  - vulnerabilities_discovered (by severity)
+  - attack_vectors_identified
+  - successful_exploits_executed
+  - remediation_recommendations_implemented
+
+bullet_templates:
+  - "Performed full-scope IoT penetration testing on {count} smart devices, including hardware UART/JTAG access and firmware reverse engineering with Binwalk/Ghidra, discovering {count} critical vulnerabilities (CVSS 9.0+)."
+  - "Executed wireless attacks using HackRF and Flipper Zero against BLE/Zigbee protocols, identifying and demonstrating {count} man-in-the-middle and replay attacks on connected IoT ecosystems."
+  - "Conducted physical and firmware-based testing following OWASP IoT Top 10, chaining exploits to gain root access on {count} devices and providing detailed remediation guidance to development teams."
+  - "Utilized ChipWhisperer for side-channel analysis on embedded IoT hardware, extracting cryptographic keys and demonstrating practical attacks against secure boot mechanisms."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
