@@ -1,0 +1,44 @@
+job_titles:
+  - Chief Information Security Officer (CISO)
+  - Deputy CISO
+  - Head of Cybersecurity
+  - VP of Information Security
+
+keywords:
+  concepts:
+    - Cybersecurity Strategy
+    - Risk Governance
+    - Board Reporting
+    - Budget Management
+    - Regulatory Compliance
+  frameworks:
+    - NIST CSF
+    - ISO 27001
+    - COBIT
+    - Zero Trust Strategy
+
+action_verbs:
+  - Led
+  - Developed
+  - Governed
+  - Aligned
+  - Presented
+  - Mitigated
+
+metrics:
+  - security_program_maturity_level
+  - risk_reduction_percentage
+  - budget_efficiency
+  - compliance_achievement_rate
+
+bullet_templates:
+  - "Led enterprise-wide cybersecurity program as CISO, achieving {percentage}% risk reduction across {count} business units."
+  - "Presented quarterly security posture to board, securing {amount} additional budget for emerging threats."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
