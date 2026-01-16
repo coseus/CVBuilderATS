@@ -1,0 +1,36 @@
+job_titles:
+  - Cisco Security Engineer
+  - CCNP Security Specialist
+  - Cisco Firepower Engineer
+
+keywords:
+  technologies:
+    - Firepower NGFW
+    - SecureX
+    - Umbrella
+    - Duo
+    - ISE (Identity Services Engine)
+  certifications:
+    - CCNP Security
+    - CCIE Security
+
+action_verbs:
+  - Implemented
+  - Hardened
+  - Monitored
+  - Integrated
+
+metrics:
+  - threats_blocked
+  - policy_compliance_rate
+
+bullet_templates:
+  - "Implemented Cisco Secure Firewall with threat intelligence integration, blocking {count} advanced threats monthly."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
