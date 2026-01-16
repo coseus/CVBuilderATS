@@ -1,0 +1,51 @@
+job_titles:
+  - Advanced Threat Hunter
+  - Proactive Threat Hunter
+  - Cyber Threat Hunter
+  - Detection Engineer (Hunting focus)
+  - Purple Team Hunter
+
+keywords:
+  methodologies:
+    - Hypothesis-Driven Hunting
+    - Threat Modeling
+    - TTP Analysis
+    - Adversary Emulation
+  frameworks:
+    - MITRE ATT&CK
+    - MITRE CAR
+    - Cyber Kill Chain
+  tools:
+    - Splunk / Elastic
+    - Microsoft Sentinel Hunting Queries
+    - CrowdStrike Falcon OverWatch
+    - Velociraptor
+    - Zeek
+    - YARA
+
+action_verbs:
+  - Hunted
+  - Developed
+  - Executed
+  - Discovered
+  - Documented
+  - Mitigated
+  - Simulated
+
+metrics:
+  - threats_discovered_proactively
+  - hunting_campaigns_completed
+  - detection_coverage_improvement
+  - false_positive_rate_hunting
+
+bullet_templates:
+  - "Conducted hypothesis-driven threat hunting campaigns identifying {count} undetected threats using MITRE ATT&CK TTPs."
+  - "Developed custom detection rules and hunting queries, increasing proactive threat discovery by {percentage}%."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
