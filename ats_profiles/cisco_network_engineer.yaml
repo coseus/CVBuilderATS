@@ -1,0 +1,40 @@
+job_titles:
+  - Cisco Network Engineer
+  - CCNP Enterprise Engineer
+  - Cisco Certified Network Professional
+
+keywords:
+  technologies:
+    - Cisco IOS-XE
+    - Catalyst / Nexus Switches
+    - ISR/ASR Routers
+    - SD-Access
+    - DNA Center
+  certifications:
+    - CCNA
+    - CCNP Enterprise
+    - CCIE Enterprise Infrastructure
+
+action_verbs:
+  - Designed
+  - Configured
+  - Troubleshot
+  - Migrated
+  - Optimized
+
+metrics:
+  - network_uptime_percentage
+  - deployment_time_reduction
+  - incidents_resolved
+
+bullet_templates:
+  - "Designed and deployed Cisco SD-Access fabric for {count} sites, improving segmentation and policy enforcement."
+  - "Troubleshot complex Cisco routing issues, achieving {percentage}% faster resolution times."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
