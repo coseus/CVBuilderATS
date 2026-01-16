@@ -1,0 +1,53 @@
+job_titles:
+  - Industrial IoT Security Engineer
+  - IIoT Security Specialist
+  - OT/IoT Security Engineer
+  - ICS Security Analyst
+
+keywords:
+  protocols:
+    - Modbus TCP/RTU
+    - OPC UA
+    - PROFINET
+    - EtherNet/IP
+    - DNP3
+  standards:
+    - IEC 62443 (full series)
+    - NIST SP 800-82
+    - Purdue Model
+    - ISA/IEC 62443-4-2
+  tools:
+    - Claroty xDome / CTD
+    - Nozomi Guardian
+    - Dragos Platform
+    - Tenable OT Security
+    - Armis Centrix for OT
+    - Cisco Cyber Vision
+
+action_verbs:
+  - Designed
+  - Implemented
+  - Segmented
+  - Monitored
+  - Assessed
+  - Hardened
+  - Responded
+
+metrics:
+  - ot_assets_protected
+  - network_segmentation_compliance
+  - critical_vulnerabilities_remediated
+  - mean_time_to_detect_minutes
+
+bullet_templates:
+  - "Architected secure IT/OT convergence following Purdue Model and IEC 62443, segmenting {count} industrial zones and reducing lateral movement risk by {percentage}%."
+  - "Deployed passive ICS monitoring with {tool}, achieving full visibility into {count} OT devices and detecting {count} anomalous protocol behaviors monthly."
+  - "Conducted IEC 62443 compliance assessment for industrial control systems, remediating {count} security level (SL) gaps within {months} timeframe."
+
+section_priority:
+  - Summary
+  - Skills
+  - Experience
+  - Projects
+  - Certifications
+  - Education
