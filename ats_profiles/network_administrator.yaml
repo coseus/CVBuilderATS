@@ -1,0 +1,110 @@
+id: network_administrator
+title: Network Administrator / Administrator de retea
+job_titles:
+- Network Administrator
+- Network Engineer
+- Senior Network Engineer
+- Network Security Engineer
+- CCNA/CCNP Specialist
+- SD-WAN Engineer
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - TCP/IP
+  - BGP
+  - OSPF
+  - MPLS
+  - VLAN
+  - SD-WAN
+  - Routing & Switching
+  - Firewall Management
+  - VPN
+  - Wireless Networking
+  - QoS
+  - Network Segmentation
+  technologies:
+  - TCP/IP
+  - BGP
+  - OSPF
+  - MPLS
+  - VLAN
+  - SD-WAN
+  - Routing & Switching
+  - Firewall Management
+  - VPN
+  - Wireless Networking
+  - QoS
+  - Network Segmentation
+  - ACLs
+  - IPS/IDS
+  - Zero Trust Networking
+  tools:
+  - Cisco IOS/NX-OS
+  - Juniper Junos
+  - Wireshark
+  - SolarWinds
+  - PRTG
+  - Cisco Meraki
+  - FortiGate
+  certifications:
+  - ''
+  frameworks:
+  - ''
+  soft_skills:
+  - ''
+action_verbs:
+- Configured
+- Monitored
+- Troubleshot
+- Optimized
+- Deployed
+- Secured
+- Upgraded
+- Documented
+- Resolved
+- Designed
+metrics:
+- network_uptime_percentage
+- latency_reduction_ms
+- tickets_resolved
+- mttr_minutes
+- bandwidth_utilization
+- security_incidents_prevented
+bullet_templates:
+- Configured and maintained enterprise network for {count} sites, achieving {percentage}%
+  uptime.
+- Implemented SD-WAN reducing latency by {ms} ms and improving efficiency by {percentage}%.
+- Resolved {count} critical network incidents monthly, maintaining SLA at {percentage}%.
+template_placeholders:
+- tool
+- scope
+- metric
+- percentage
+- count
+- time
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

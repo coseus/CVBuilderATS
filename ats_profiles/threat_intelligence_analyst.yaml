@@ -1,0 +1,64 @@
+job_titles:
+- Threat Intelligence Analyst
+- Cyber Threat Intelligence Specialist
+- Strategic Threat Intelligence Lead
+- Tactical Threat Hunter
+keywords:
+  types:
+  - Strategic Intelligence
+  - Tactical Intelligence
+  - Operational Intelligence
+  - Technical Intelligence
+  sources:
+  - OSINT
+  - Dark Web Monitoring
+  - Threat Feeds (AlienVault OTX, MISP)
+  - IOCs / TTPs
+  frameworks:
+  - MITRE ATT&CK
+  - Diamond Model
+  - Cyber Kill Chain
+action_verbs:
+- Collected
+- Analyzed
+- Disseminated
+- Correlated
+- Enriched
+- Reported
+metrics:
+- intelligence_reports_produced
+- actionable_intel_percentage
+- threat_detection_improvement
+- false_positive_reduction
+bullet_templates:
+- Produced {count} weekly threat intelligence reports, enabling proactive defenses
+  against emerging campaigns.
+- Correlated IOCs from multiple sources, identifying {count} active threats targeting
+  the organization.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

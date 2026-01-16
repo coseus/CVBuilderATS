@@ -1,0 +1,68 @@
+job_titles:
+- Zero Trust Architect
+- Zero Trust Engineer
+- Zero Trust Implementation Specialist
+- Identity-Centric Security Architect
+keywords:
+  pillars:
+  - Identity Verification
+  - Device Health
+  - Least Privilege Access
+  - Micro-Segmentation
+  - Continuous Monitoring
+  - Assume Breach Mindset
+  frameworks:
+  - NIST Zero Trust Architecture
+  - CISA Zero Trust Maturity Model
+  - Google's BeyondCorp
+  tools:
+  - Zscaler
+  - Okta
+  - Microsoft Entra ID Conditional Access
+  - CrowdStrike
+  - Illumio
+  - Cisco Secure Access
+action_verbs:
+- Designed
+- Implemented
+- Mapped
+- Enforced
+- Monitored
+- Migrated
+metrics:
+- zero_trust_coverage_percentage
+- access_policy_enforcement_rate
+- lateral_movement_prevention
+- risk_score_reduction
+bullet_templates:
+- Architected Zero Trust framework covering {percentage}% of enterprise assets, enforcing
+  least privilege and continuous verification.
+- Migrated legacy VPN to Zero Trust Network Access (ZTNA), eliminating {count} attack
+  vectors.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

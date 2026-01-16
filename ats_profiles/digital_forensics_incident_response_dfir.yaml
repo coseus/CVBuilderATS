@@ -1,0 +1,69 @@
+job_titles:
+- Digital Forensics Analyst
+- Incident Response Engineer
+- DFIR Specialist
+- Cyber Forensics Investigator
+- Threat Response Analyst
+keywords:
+  frameworks:
+  - NIST SP 800-61
+  - SANS Incident Handler
+  - MITRE ATT&CK
+  tools:
+  - Autopsy
+  - Volatility
+  - FTK Imager
+  - EnCase
+  - X-Ways Forensics
+  - Magnet AXIOM
+  - The Sleuth Kit
+  practices:
+  - Memory Forensics
+  - Disk Imaging
+  - Timeline Analysis
+  - Malware Reverse Engineering
+  - Chain of Custody
+action_verbs:
+- Investigated
+- Analyzed
+- Collected
+- Preserved
+- Responded
+- Documented
+- Reconstructed
+metrics:
+- incidents_resolved
+- mttr_hours
+- evidence_collected_accuracy
+- root_cause_identified_percentage
+bullet_templates:
+- Conducted digital forensics on {count} major incidents, identifying root cause and
+  supporting legal proceedings.
+- Led DFIR response reducing containment time to under {hours} hours average.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

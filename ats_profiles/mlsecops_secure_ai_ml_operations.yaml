@@ -1,0 +1,63 @@
+job_titles:
+- MLSecOps Engineer
+- Secure MLOps Specialist
+- AI/ML Security Operations Engineer
+- Model Security Engineer
+keywords:
+  practices:
+  - Secure Model Development Lifecycle
+  - Model Scanning
+  - Adversarial Robustness
+  - Data Lineage Security
+  - Model Supply Chain Security
+  tools:
+  - MLflow (security extensions)
+  - Adversarial Robustness Toolbox
+  - Garak LLM Scanner
+  - Hugging Face Model Cards + Safety
+  - Snyk for ML
+  - Protect AI
+action_verbs:
+- Secured
+- Integrated
+- Scanned
+- Hardened
+- Monitored
+- Validated
+metrics:
+- secure_models_deployed
+- adversarial_robustness_score
+- ml_pipeline_vulnerabilities_remediated
+- model_supply_chain_risk_reduction
+bullet_templates:
+- Implemented MLSecOps practices in ML pipelines, securing {count} production models
+  against adversarial attacks.
+- Integrated model scanning and robustness testing, reducing supply chain vulnerabilities
+  in AI deployments by {percentage}%.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

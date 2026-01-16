@@ -1,0 +1,69 @@
+job_titles:
+- DevSecOps Engineer
+- Security DevOps Engineer
+- Application Security Engineer (DevSecOps focus)
+- Secure Software Supply Chain Specialist
+keywords:
+  practices:
+  - Shift-Left Security
+  - Secure CI/CD
+  - Infrastructure as Code Security
+  - SAST/DAST/SCA
+  tools:
+  - Snyk
+  - SonarQube
+  - Dependabot
+  - Checkmarx
+  - GitHub Advanced Security
+  - Trivy
+  - Semgrep
+  concepts:
+  - Threat Modeling
+  - Secure Coding
+  - Container Security
+  - SBOM Generation
+action_verbs:
+- Integrated
+- Automated
+- Scanned
+- Remediated
+- Educated
+- Hardened
+- Reviewed
+metrics:
+- vulnerabilities_found_pre_prod
+- remediation_time_days
+- secure_code_percentage
+- false_positive_rate
+bullet_templates:
+- Integrated SAST/DAST/SCA tools into CI/CD pipeline, reducing vulnerabilities in
+  production by {percentage}%.
+- Automated container image scanning with {tool}, blocking {count} critical vulnerabilities
+  per month.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

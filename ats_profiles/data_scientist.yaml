@@ -1,0 +1,116 @@
+id: data_scientist
+title: Data Scientist / Data scientist
+job_titles:
+- Data Scientist
+- Applied Scientist
+- Data scientist
+- Cercetator aplicat
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Experiment Design
+  - Statistical Modeling
+  - Feature Engineering
+  technologies:
+  - Python
+  - Pandas
+  - scikit-learn
+  - SQL
+  - XGBoost
+  tools:
+  - Jupyter
+  - MLflow
+  - Airflow
+  certifications: []
+  frameworks:
+  - A/B Testing
+  - CRISP-DM
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- auc
+- f1
+- precision
+- recall
+- lift
+- conversion_rate
+bullet_templates:
+- Built {model} to predict {target}, improving {metric} from {before} to {after}.
+- Designed and analyzed A/B tests for {feature}, increasing {kpi} by {percentage}%.
+- Created stakeholder dashboards in {bi_tool}, reducing reporting time by {hours}/week.
+bullet_templates_ro:
+- Am construit {model} pentru a prezice {target}, imbunatatind {metric} de la {before}
+  la {after}.
+- Am proiectat si analizat teste A/B pentru {feature}, crescand {kpi} cu {percentage}%.
+- Am creat dashboard-uri in {bi_tool}, reducand raportarea cu {hours} ore/saptamana.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

@@ -1,0 +1,68 @@
+job_titles:
+- Advanced Threat Hunter
+- Proactive Threat Hunter
+- Cyber Threat Hunter
+- Detection Engineer (Hunting focus)
+- Purple Team Hunter
+keywords:
+  methodologies:
+  - Hypothesis-Driven Hunting
+  - Threat Modeling
+  - TTP Analysis
+  - Adversary Emulation
+  frameworks:
+  - MITRE ATT&CK
+  - MITRE CAR
+  - Cyber Kill Chain
+  tools:
+  - Splunk / Elastic
+  - Microsoft Sentinel Hunting Queries
+  - CrowdStrike Falcon OverWatch
+  - Velociraptor
+  - Zeek
+  - YARA
+action_verbs:
+- Hunted
+- Developed
+- Executed
+- Discovered
+- Documented
+- Mitigated
+- Simulated
+metrics:
+- threats_discovered_proactively
+- hunting_campaigns_completed
+- detection_coverage_improvement
+- false_positive_rate_hunting
+bullet_templates:
+- Conducted hypothesis-driven threat hunting campaigns identifying {count} undetected
+  threats using MITRE ATT&CK TTPs.
+- Developed custom detection rules and hunting queries, increasing proactive threat
+  discovery by {percentage}%.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

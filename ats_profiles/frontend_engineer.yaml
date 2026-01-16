@@ -1,0 +1,123 @@
+id: frontend_engineer
+title: Frontend Engineer / Inginer frontend
+job_titles:
+- Frontend Engineer
+- Web Developer
+- React Developer
+- Inginer frontend
+- Dezvoltator web
+- Dezvoltator React
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - UI Engineering
+  - Accessibility
+  - Performance
+  - Design Systems
+  technologies:
+  - JavaScript
+  - TypeScript
+  - React
+  - Next.js
+  - HTML
+  - CSS
+  tools:
+  - Git
+  - Jest
+  - Cypress
+  - Webpack
+  - Vite
+  certifications: []
+  frameworks:
+  - WCAG
+  - OWASP Top 10
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- core_web_vitals
+- p95_page_load
+- bundle_size_kb
+- ui_defect_rate
+bullet_templates:
+- Built responsive UI for {product} using {stack}, improving Core Web Vitals by {percentage}%.
+- Implemented component library/design system, reducing UI defects by {percentage}%
+  and speeding delivery by {percentage2}%.
+- Optimized bundle size by {percentage}%, improving p95 page load time to {latency}.
+bullet_templates_ro:
+- Am dezvoltat UI responsive pentru {product} folosind {stack}, imbunatatind Core
+  Web Vitals cu {percentage}%.
+- Am implementat un design system, reducand defectele UI cu {percentage}% si accelerand
+  livrarea cu {percentage2}%.
+- Am optimizat dimensiunea bundle-ului cu {percentage}%, reducand p95 load time la
+  {latency}.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

@@ -1,0 +1,77 @@
+id: identity_access_management
+title: Identity & Access Management
+job_titles:
+- IAM Engineer
+- Identity Management Specialist
+- Okta Engineer
+- Entra ID Specialist
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - SSO
+  - MFA
+  - Privileged Access
+  - Role-Based Access
+  technologies:
+  - SSO
+  - MFA
+  - Privileged Access
+  - Role-Based Access
+  tools:
+  - Okta
+  - Azure AD / Entra ID
+  - SailPoint
+  - Ping Identity
+  certifications:
+  - ''
+  frameworks:
+  - ''
+  soft_skills:
+  - ''
+action_verbs:
+- Implemented
+- Managed
+- Audited
+- Automated
+metrics:
+- identities_managed
+- access_reviews_completed
+- security_incidents_reduced
+bullet_templates:
+- Implemented SSO/MFA for {count} applications, enhancing security.
+- Improved {metric} by {percentage}% by implementing {tool} across {scope}.
+- Reduced {metric} by {percentage}% through automation using {tool} and standardized
+  runbooks.
+template_placeholders:
+- tool
+- scope
+- metric
+- percentage
+- count
+- time
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

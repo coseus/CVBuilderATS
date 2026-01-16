@@ -1,0 +1,52 @@
+job_titles:
+- Edge Computing Security Engineer
+- Edge IoT Security Specialist
+keywords:
+  platforms:
+  - AWS IoT Greengrass
+  - Azure IoT Edge
+  - Google Edge TPU
+  tools:
+  - Armis
+  - Forescout
+  - Microsoft Defender for IoT
+  - Edge-specific IDS (Snort/Zeek at edge)
+action_verbs:
+- Deployed
+- Secured
+- Optimized
+- Monitored
+metrics:
+- edge_nodes_secured
+- latency_impact_security
+- anomalies_detected_edge
+bullet_templates:
+- Secured {count} edge computing nodes with Zero Trust principles, maintaining low
+  latency while enforcing mutual authentication.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

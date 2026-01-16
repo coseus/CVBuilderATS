@@ -1,0 +1,124 @@
+id: data_engineer
+title: Data Engineer / Inginer de date
+job_titles:
+- Data Engineer
+- ETL Engineer
+- Analytics Engineer
+- Inginer de date
+- Inginer ETL
+- Inginer analytics
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - ETL/ELT
+  - Data Modeling
+  - Data Quality
+  - Orchestration
+  technologies:
+  - SQL
+  - Python
+  - Spark
+  - Kafka
+  - Airflow
+  - dbt
+  tools:
+  - Airflow
+  - dbt
+  - Snowflake
+  - BigQuery
+  - Databricks
+  certifications: []
+  frameworks:
+  - Kimball
+  - Data Vault
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- data_freshness
+- pipeline_success_rate
+- sla
+- cost_per_tb
+- latency
+bullet_templates:
+- Developed {pipeline} using {tools}, processing {volume} daily with {sla}% success
+  rate.
+- Designed {model} to predict {target}, improving {metric} from {before} to {after}.
+- Created dashboards in {bi_tool} for {stakeholders}, reducing reporting time by {hours}/week.
+bullet_templates_ro:
+- Am dezvoltat {pipeline} folosind {tools}, procesand {volume} zilnic cu rata de succes
+  {sla}%.
+- Am proiectat {model} pentru a prezice {target}, imbunatatind {metric} de la {before}
+  la {after}.
+- Am creat dashboard-uri in {bi_tool} pentru {stakeholders}, reducand raportarea cu
+  {hours} ore/saptamana.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

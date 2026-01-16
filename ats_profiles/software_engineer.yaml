@@ -1,0 +1,137 @@
+id: software_engineer
+title: Software Engineer / Inginer software
+job_titles:
+- Software Engineer
+- Backend Engineer
+- Full-Stack Engineer
+- Python Developer
+- Java Developer
+- Inginer software
+- Dezvoltator backend
+- Dezvoltator full-stack
+- Dezvoltator Python
+- Dezvoltator Java
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - System Design
+  - Microservices
+  - APIs
+  - Performance
+  - Testing
+  technologies:
+  - Python
+  - Java
+  - Node.js
+  - REST
+  - gRPC
+  - PostgreSQL
+  - Redis
+  - Docker
+  - Kubernetes
+  tools:
+  - Git
+  - CI/CD
+  - Docker
+  - Kubernetes
+  - Terraform
+  - Prometheus
+  certifications: []
+  frameworks:
+  - SOLID
+  - Clean Architecture
+  - TDD
+  - OWASP Top 10
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- deployment_frequency
+- lead_time_for_changes
+- change_failure_rate
+- mttr
+- p95_latency
+bullet_templates:
+- Built {feature} in {stack}, increasing {kpi} by {percentage}% and reducing {issue}
+  by {percentage2}%.
+- Refactored {module} to {goal}, reducing build time by {percentage}% and defects
+  by {percentage2}%.
+- Implemented CI/CD with {toolchain}, improving deployment frequency to {freq} and
+  MTTR by {percentage}%.
+bullet_templates_ro:
+- Am dezvoltat {feature} in {stack}, crescand {kpi} cu {percentage}% si reducand {issue}
+  cu {percentage2}%.
+- Am refactorizat {module} pentru {goal}, reducand timpul de build cu {percentage}%
+  si defectele cu {percentage2}%.
+- Am implementat CI/CD cu {toolchain}, crescand frecventa deploy-urilor la {freq}
+  si reducand MTTR cu {percentage}%.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

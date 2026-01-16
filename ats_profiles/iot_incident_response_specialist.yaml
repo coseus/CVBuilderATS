@@ -1,0 +1,80 @@
+job_titles:
+- IoT Incident Response Specialist
+- IoT Cyber Incident Responder
+- Connected Devices IR Analyst
+- IoT Threat Response Engineer
+keywords:
+  practices:
+  - IoT-Specific Triage & Containment
+  - Device Quarantine & Isolation
+  - Firmware Rollback / OTA Recovery
+  - Botnet (Mirai-style) Response
+  - Forensic Analysis on IoT Devices
+  - Coordinated Recovery with Vendors
+  frameworks:
+  - NIST SP 800-61 (adapted for IoT)
+  - SANS Incident Response Process
+  - MITRE ATT&CK for IoT
+  tools:
+  - Monitoring: Claroty, Nozomi Guardian, Microsoft Defender for IoT, Armis
+  - Forensics: Autopsy/The Sleuth Kit (for IoT images), Volatility (memory if applicable)
+  - Response: AWS IoT Device Defender (alerts & quarantine), Azure IoT Hub (device
+      twin for isolation)
+  - General IR: Splunk/ELK (IoT logs), Wireshark (protocol capture), Zeek (network
+      behavior)
+  - Automation: SOAR playbooks (e.g., Cortex XSOAR, Swimlane) customized for IoT
+action_verbs:
+- Responded
+- Isolated
+- Investigated
+- Contained
+- Recovered
+- Forensically Analyzed
+- Coordinated
+- Documented
+metrics:
+- mean_time_to_contain_hours
+- mean_time_to_recover_hours
+- devices_recovered_success_rate
+- incidents_fully_resolved
+- root_cause_identified_percentage
+bullet_templates:
+- Led incident response for {count} IoT botnet-style infections (Mirai variant), achieving
+  containment within {hours} hours by isolating affected devices via {tool} and coordinating
+  OTA firmware rollback.
+- Performed forensic analysis on compromised IoT devices using Autopsy and Wireshark
+  captures, identifying initial access vector and root cause, enabling full recovery
+  with {percentage}% success rate across fleet.
+- Developed and executed custom SOAR playbooks for IoT incidents, automating quarantine
+  of suspicious devices through Microsoft Defender for IoT, reducing average response
+  time by {percentage}%.
+- Coordinated cross-vendor incident response for {count} connected devices in a large-scale
+  compromise, containing threats, preserving evidence, and implementing preventive
+  controls to avoid recurrence.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

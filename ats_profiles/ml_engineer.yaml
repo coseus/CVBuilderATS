@@ -1,0 +1,117 @@
+id: ml_engineer
+title: Machine Learning Engineer / Inginer Machine Learning
+job_titles:
+- Machine Learning Engineer
+- MLOps Engineer
+- Inginer Machine Learning
+- Inginer MLOps
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Model Deployment
+  - ML Pipelines
+  - Monitoring
+  - Feature Stores
+  technologies:
+  - Python
+  - TensorFlow
+  - PyTorch
+  - Kubernetes
+  - Spark
+  tools:
+  - MLflow
+  - Kubeflow
+  - SageMaker
+  - Vertex AI
+  certifications: []
+  frameworks:
+  - MLOps
+  - Model Governance
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- p95_latency
+- throughput
+- model_drift
+- training_cycle_time
+bullet_templates:
+- Deployed {model} to production using {stack}, serving {throughput} with p95 latency
+  under {latency}.
+- Built ML pipeline with {tool}, improving training cycle time by {percentage}%.
+- Implemented model monitoring for {metric}, reducing drift-related incidents by {percentage}%.
+bullet_templates_ro:
+- Am pus in productie {model} folosind {stack}, servind {throughput} cu latenta p95
+  sub {latency}.
+- Am construit pipeline ML cu {tool}, reducand timpul ciclului de antrenare cu {percentage}%.
+- Am implementat monitorizare pentru {metric}, reducand incidentele din drift cu {percentage}%.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

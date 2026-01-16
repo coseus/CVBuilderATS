@@ -1,0 +1,109 @@
+id: accountant
+title: Accountant / Contabil
+job_titles:
+- Accountant
+- Senior Accountant
+- Contabil
+- Contabil senior
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Financial Reporting
+  - Accounts Payable/Receivable
+  - Month-end Close
+  - Reconciliation
+  technologies: []
+  tools:
+  - Excel
+  - SAP
+  - Oracle
+  certifications: []
+  frameworks:
+  - IFRS
+  - GAAP
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- close_cycle_days
+- reconciliation_discrepancies
+- hours_saved
+bullet_templates:
+- Closed monthly books within {days} days and reduced reconciliation discrepancies
+  by {percentage}%.
+- Prepared financial statements and ensured compliance with {framework}.
+- Automated reporting in {tool}, saving {hours} hours/month.
+bullet_templates_ro:
+- Am inchis luna in {days} zile si am redus diferentele de reconciliere cu {percentage}%.
+- Am pregatit situatii financiare si am asigurat conformitatea cu {framework}.
+- Am automatizat raportarea in {tool}, economisind {hours} ore/luna.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

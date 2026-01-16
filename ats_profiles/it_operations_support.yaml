@@ -1,0 +1,85 @@
+id: it_operations_support
+title: IT Operations Support
+job_titles:
+- IT Support Specialist
+- Help Desk Technician
+- Service Desk Analyst
+- NOC Engineer
+- IT Operations Analyst
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Windows / macOS
+  - Active Directory
+  - Office 365 / M365
+  - Ticketing Systems (ServiceNow, Jira)
+  - Troubleshooting
+  - User Support
+  - Hardware/Software Installation
+  technologies:
+  - Windows / macOS
+  - Active Directory
+  - Office 365 / M365
+  - Ticketing Systems (ServiceNow, Jira)
+  - Troubleshooting
+  - User Support
+  - Hardware/Software Installation
+  tools:
+  - ''
+  certifications:
+  - ''
+  frameworks:
+  - ''
+  soft_skills:
+  - ''
+action_verbs:
+- Resolved
+- Supported
+- Troubleshot
+- Documented
+- Escalated
+- Trained
+metrics:
+- tickets_resolved
+- first_call_resolution_rate
+- average_handle_time
+- customer_satisfaction_score
+bullet_templates:
+- Resolved {count} tickets/month with {percentage}% first-call resolution.
+- Provided Level 1/2 support for {count} users, maintaining high CSAT.
+- Improved {metric} by {percentage}% by implementing {tool} across {scope}.
+- Reduced {metric} by {percentage}% through automation using {tool} and standardized
+  runbooks.
+template_placeholders:
+- tool
+- scope
+- metric
+- percentage
+- count
+- time
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

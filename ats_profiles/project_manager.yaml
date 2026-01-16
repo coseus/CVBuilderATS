@@ -1,0 +1,113 @@
+id: project_manager
+title: Project Manager / Manager de proiect
+job_titles:
+- Project Manager
+- Program Manager
+- Manager de proiect
+- Manager de program
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Planning
+  - Risk Management
+  - Delivery
+  - Stakeholder Management
+  technologies: []
+  tools:
+  - MS Project
+  - Jira
+  - Confluence
+  certifications: []
+  frameworks:
+  - Agile
+  - Scrum
+  - PMBOK
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- on_time_delivery
+- budget_variance
+- scope_completion
+- risk_count
+bullet_templates:
+- Managed {project} with budget {budget}, delivering on time with {percentage}% scope
+  completion.
+- Led cross-functional team of {count} to deliver {release}, reducing timeline by
+  {percentage}%.
+- Implemented risk management cadence, reducing critical issues by {percentage}%.
+bullet_templates_ro:
+- Am gestionat {project} cu buget {budget}, livrand la timp cu {percentage}% din scope.
+- Am condus o echipa cross-functional de {count} pentru {release}, reducand timeline-ul
+  cu {percentage}%.
+- Am implementat managementul riscurilor, reducand problemele critice cu {percentage}%.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

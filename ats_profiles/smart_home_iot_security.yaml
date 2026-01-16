@@ -1,0 +1,49 @@
+job_titles:
+- Smart Home IoT Security Specialist
+- Consumer IoT Security Engineer
+keywords:
+  standards:
+  - ETSI EN 303 645
+  - Matter Security
+  - PSA Certified Level 1–3
+  tools:
+  - AWS IoT Device Defender
+  - Google Home Security
+  - Samsung Knox IoT
+action_verbs:
+- Assessed
+- Hardened
+- Certified
+metrics:
+- devices_compliant_etsi
+- consumer_privacy_incidents
+bullet_templates:
+- Ensured {count} smart home devices meet ETSI EN 303 645 baseline, implementing no-default
+  passwords and secure updates.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

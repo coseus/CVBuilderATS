@@ -1,0 +1,58 @@
+job_titles:
+- Security Architect
+- Enterprise Security Architect
+- Solutions Security Architect
+keywords:
+  concepts:
+  - Zero Trust Architecture
+  - Defense in Depth
+  - Secure by Design
+  - Security Patterns
+  frameworks:
+  - NIST Cybersecurity Framework
+  - SABSA
+  - TOGAF Security
+  - Zero Trust Maturity Model
+action_verbs:
+- Designed
+- Architected
+- Reviewed
+- Recommended
+- Aligned
+- Governed
+metrics:
+- security_controls_coverage
+- architecture_compliance_rate
+- risk_reduction_percentage
+bullet_templates:
+- Architected enterprise Zero Trust security model, covering {percentage}% of critical
+  assets.
+- Led security design reviews for {count} major projects, ensuring alignment with
+  NIST standards.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

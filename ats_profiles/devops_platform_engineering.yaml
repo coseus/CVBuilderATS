@@ -1,0 +1,92 @@
+id: devops_platform_engineering
+title: DevOps & Platform Engineering
+job_titles:
+- DevOps Engineer
+- Platform Engineer
+- Site Reliability Engineer (SRE)
+- Infrastructure as Code Engineer
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - CI/CD
+  - Infrastructure as Code
+  - GitOps
+  - Observability
+  - Reliability
+  - Scalability
+  - Automation
+  technologies:
+  - CI/CD
+  - Infrastructure as Code
+  - GitOps
+  - Observability
+  - Reliability
+  - Scalability
+  - Automation
+  tools:
+  - Jenkins
+  - GitLab CI
+  - Terraform
+  - Ansible
+  - Kubernetes
+  - Docker
+  - Prometheus
+  - Grafana
+  certifications:
+  - ''
+  frameworks:
+  - ''
+  soft_skills:
+  - ''
+action_verbs:
+- Built
+- Automated
+- Optimized
+- Monitored
+- Scaled
+- Implemented
+- Troubleshot
+metrics:
+- deployment_frequency
+- change_failure_rate
+- lead_time_for_changes
+- mttr
+bullet_templates:
+- Implemented CI/CD pipelines reducing deployment time by {percentage}%.
+- Managed Kubernetes clusters for {count} services, improving reliability.
+- Improved {metric} by {percentage}% by implementing {tool} across {scope}.
+- Reduced {metric} by {percentage}% through automation using {tool} and standardized
+  runbooks.
+template_placeholders:
+- tool
+- scope
+- metric
+- percentage
+- count
+- time
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

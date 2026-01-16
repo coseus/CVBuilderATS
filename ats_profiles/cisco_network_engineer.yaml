@@ -1,0 +1,57 @@
+job_titles:
+- Cisco Network Engineer
+- CCNP Enterprise Engineer
+- Cisco Certified Network Professional
+keywords:
+  technologies:
+  - Cisco IOS-XE
+  - Catalyst / Nexus Switches
+  - ISR/ASR Routers
+  - SD-Access
+  - DNA Center
+  certifications:
+  - CCNA
+  - CCNP Enterprise
+  - CCIE Enterprise Infrastructure
+action_verbs:
+- Designed
+- Configured
+- Troubleshot
+- Migrated
+- Optimized
+metrics:
+- network_uptime_percentage
+- deployment_time_reduction
+- incidents_resolved
+bullet_templates:
+- Designed and deployed Cisco SD-Access fabric for {count} sites, improving segmentation
+  and policy enforcement.
+- Troubleshot complex Cisco routing issues, achieving {percentage}% faster resolution
+  times.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

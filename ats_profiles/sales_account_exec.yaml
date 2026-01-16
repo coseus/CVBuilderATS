@@ -1,0 +1,112 @@
+id: sales_account_exec
+title: Account Executive (Sales) / Account executive (Vanzari)
+job_titles:
+- Account Executive
+- Sales Executive
+- Business Development
+- Account executive
+- Executive vanzari
+- Dezvoltare business
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Pipeline Management
+  - Negotiation
+  - Customer Relationships
+  - Forecasting
+  technologies: []
+  tools:
+  - Salesforce
+  - HubSpot
+  certifications: []
+  frameworks:
+  - MEDDIC
+  - SPIN Selling
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- quota_attainment
+- arr
+- pipeline_value
+- sales_cycle_length
+bullet_templates:
+- Closed {count} deals worth {budget} ARR, achieving {percentage}% of quota.
+- Built pipeline of {budget} by targeting {segment} and improving conversion by {percentage}%.
+- Negotiated contracts reducing sales cycle from {time_old} to {time_new}.
+bullet_templates_ro:
+- Am inchis {count} contracte in valoare de {budget} ARR, atingand {percentage}% din
+  quota.
+- Am construit un pipeline de {budget} tintind {segment} si crescand conversia cu
+  {percentage}%.
+- Am negociat contracte reducand ciclul de vanzare de la {time_old} la {time_new}.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

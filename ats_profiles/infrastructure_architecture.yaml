@@ -1,0 +1,72 @@
+id: infrastructure_architecture
+title: Infrastructure Architecture
+job_titles:
+- Infrastructure Architect
+- Solutions Architect (Infra)
+- Enterprise Architect
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Design Patterns
+  - Scalability
+  - High Availability
+  - Hybrid Cloud Architecture
+  technologies:
+  - Design Patterns
+  - Scalability
+  - High Availability
+  - Hybrid Cloud Architecture
+  tools:
+  - ''
+  certifications:
+  - ''
+  frameworks:
+  - ''
+  soft_skills:
+  - ''
+action_verbs:
+- Designed
+- Architected
+- Evaluated
+- Recommended
+metrics:
+- projects_delivered
+- architecture_adoption
+bullet_templates:
+- Architected hybrid infrastructure supporting {count} critical applications.
+- Improved {metric} by {percentage}% by implementing {tool} across {scope}.
+- Reduced {metric} by {percentage}% through automation using {tool} and standardized
+  runbooks.
+template_placeholders:
+- tool
+- scope
+- metric
+- percentage
+- count
+- time
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

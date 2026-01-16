@@ -1,0 +1,118 @@
+id: mobile_android
+title: Android Developer / Dezvoltator Android
+job_titles:
+- Android Developer
+- Mobile Developer
+- Dezvoltator Android
+- Dezvoltator mobile
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Mobile UX
+  - Offline-first
+  - App Performance
+  - Testing
+  technologies:
+  - Kotlin
+  - Android SDK
+  - Jetpack Compose
+  - Room
+  - Retrofit
+  tools:
+  - Gradle
+  - Firebase
+  - JUnit
+  - Espresso
+  certifications: []
+  frameworks:
+  - MVVM
+  - Clean Architecture
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- crash_free_users
+- anr_rate
+- app_rating
+- dau
+- retention_30d
+bullet_templates:
+- Developed {feature} in {stack}, increasing app rating from {before} to {after}.
+- Reduced ANR/crash rate by {percentage}% via profiling and performance optimizations.
+- Implemented offline-first sync for {module}, improving retention by {percentage}%.
+bullet_templates_ro:
+- Am dezvoltat {feature} in {stack}, crescand rating-ul aplicatiei de la {before}
+  la {after}.
+- Am redus ANR/crash rate cu {percentage}% prin profilare si optimizari.
+- Am implementat sincronizare offline-first pentru {module}, crescand retentia cu
+  {percentage}%.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

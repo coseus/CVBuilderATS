@@ -1,0 +1,56 @@
+job_titles:
+- Detection Engineer
+- Security Detection Engineer
+- Rule Developer (Detection)
+keywords:
+  tools:
+  - Splunk
+  - Elastic SIEM
+  - Microsoft Sentinel
+  - Sigma Rules
+  practices:
+  - Detection Engineering
+  - Use Case Development
+  - TTP Mapping
+action_verbs:
+- Developed
+- Tuned
+- Implemented
+- Tested
+- Optimized
+metrics:
+- detections_created
+- false_positive_reduction
+- coverage_improvement_percentage
+bullet_templates:
+- Developed {count} custom detection rules aligned with MITRE ATT&CK, improving coverage
+  by {percentage}%.
+- Optimized SIEM detections reducing false positives by {percentage}% while maintaining
+  high fidelity.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.

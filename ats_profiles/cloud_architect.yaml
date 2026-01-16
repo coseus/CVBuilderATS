@@ -1,0 +1,119 @@
+id: cloud_architect
+title: Cloud Architect / Arhitect cloud
+job_titles:
+- Cloud Architect
+- Solutions Architect
+- Arhitect cloud
+- Arhitect solutii
+section_priority:
+- Summary
+- Technical Skills
+- Professional Experience
+- Projects
+- Certifications
+- Education
+keywords:
+  core:
+  - Architecture
+  - Reliability
+  - Security
+  - Cost Optimization
+  technologies:
+  - AWS
+  - Azure
+  - GCP
+  - Kubernetes
+  - Terraform
+  tools:
+  - Terraform
+  - CloudFormation
+  - Azure Bicep
+  - Packer
+  certifications: []
+  frameworks:
+  - Well-Architected Framework
+  - Zero Trust
+  soft_skills: []
+action_verbs:
+- Implemented
+- Engineered
+- Automated
+- Optimized
+- Deployed
+- Integrated
+- Refactored
+- Scaled
+- Migrated
+- Hardened
+- Configured
+- Monitored
+- Troubleshot
+- Standardized
+- Documented
+- Validated
+- Benchmark-tested
+- Instrumented
+- Assessed
+- Identified
+- Exploited
+- Triaged
+- Remediated
+- Investigated
+- Detected
+- Responded
+action_verbs_ro:
+- Implementat
+- Proiectat
+- Automatizat
+- Optimizat
+- Dezvoltat
+- Integrat
+- Refactorizat
+- Scalat
+- Migrat
+- Intarit
+- Configurat
+- Monitorizat
+- Depanat
+- Standardizat
+- Documentat
+- Validat
+- Instrumentat
+- Containerizat
+- Evaluat
+- Identificat
+- Exploatat
+- Triat
+- Remediat
+- Investigat
+- Detectat
+- Raspuns
+metrics:
+- availability
+- cloud_cost
+- misconfigurations
+- migration_success_rate
+bullet_templates:
+- Designed {architecture} on {cloud}, achieving {sla}% availability and {percentage}%
+  lower cost.
+- Defined landing zone and governance, reducing misconfigurations by {percentage}%.
+- Led migration of {count} applications, completing cutover in {time} with {percentage}%
+  success.
+bullet_templates_ro:
+- Am proiectat {architecture} pe {cloud}, obtinand disponibilitate {sla}% si costuri
+  cu {percentage}% mai mici.
+- Am definit landing zone si guvernanta, reducand misconfigurarile cu {percentage}%.
+- Am coordonat migrarea a {count} aplicatii, finalizand cutover-ul in {time} cu succes
+  {percentage}%.
+template_placeholders:
+- metric
+- percentage
+- action
+- scope
+- tool_or_method
+- initiative
+- risk_or_cost
+- project
+- time
+- budget
+- quality_or_sla

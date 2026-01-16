@@ -1,0 +1,74 @@
+job_titles:
+- System Administrator
+- Linux System Administrator
+- Windows System Administrator
+- Server Administrator
+- Infrastructure Engineer
+keywords:
+  operating_systems:
+  - Windows Server
+  - Linux (RHEL, Ubuntu, CentOS)
+  - Active Directory
+  - PowerShell
+  - Bash
+  technologies:
+  - Virtualization (VMware, Hyper-V)
+  - Patch Management
+  - Backup & Recovery
+  - User Management
+  - Server Hardening
+  tools:
+  - Ansible
+  - Puppet
+  - SCCM
+  - Zabbix
+  - Veeam
+  - Nagios
+action_verbs:
+- Managed
+- Configured
+- Maintained
+- Automated
+- Troubleshot
+- Upgraded
+- Secured
+- Monitored
+- Deployed
+- Documented
+metrics:
+- server_uptime_percentage
+- tickets_resolved
+- patch_compliance_rate
+- backup_success_rate
+- mttr_hours
+- systems_managed
+bullet_templates:
+- Managed {count} servers with {percentage}% uptime, supporting daily operations.
+- Automated patching and backups, reducing manual effort by {hours} hours/week.
+section_priority:
+- Summary
+- Skills
+- Experience
+- Projects
+- Certifications
+- Education
+action_verbs_ro:
+- Implementat
+- Optimizat
+- Automatizat
+- Analizat
+- Proiectat
+- Configurat
+- Monitorizat
+- Investigat
+- Remediat
+- Documentat
+bullet_templates_ro:
+- Identificat {count} vulnerabilitati {severity} pe {assets} active, facilitand remedierea
+  in {days} zile.
+- Efectuat testare de penetrare {scope} aliniata la {framework}, reducand expunerea
+  la risc cu {percentage}%.
+- Triat {alerts} alerte SIEM/zi si escaladat incidente {sev}, imbunatatind MTTD cu
+  {percentage}%.
+- Automatizat fluxuri de detectie/raspuns, economisind {hours} ore/saptamana si reducand
+  MTTR cu {percentage}%.
