@@ -213,15 +213,18 @@ streamlit run app.py
 ``` bash
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements-build.txt
-pyinstaller .\cvbuilderats_windows.spec --noconfirm --clean
+py -m pip install -r requirements.txt
+py -m pip install -r requirements-build.txt
+py -m PyInstaller .\cvbuilderats_windows.spec --noconfirm --clean
 ```
 ### Linux
 ``` bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements-build.txt
-pyinstaller cvbuilderats_linux.spec --noconfirm --clean
+python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements-build.txt
+python3 -m PyInstaller ./cvbuilderats_linux.spec --noconfirm --clean
+chmod +x dist/cvbuilder
 ```
 
 ### Rezultatul va fi în:
