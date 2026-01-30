@@ -227,7 +227,42 @@ python3 -m PyInstaller ./cvbuilderats_linux.spec --noconfirm --clean
 chmod +x dist/cvbuilder
 ```
 
-### Rezultatul va fi în:
+### Rezult 
 ``` bash
 dist/cvbulder/
 ```
+
+## 🖥 Desktop Executables (Recommended)
+
+Download the latest ready-to-run executables here:
+
+### 🔗 Windows & Linux builds (Mega.nz)
+👉 https://mega.nz/folder/zxYx3Dqa#X85rmbOzS_Oy_aUEdwUg4A
+
+Available files
+
+Windows: CVBuilder.exe
+
+Linux: CVBuilder (AppImage / binary)
+
+⚠️ No Python installation required.
+
+### 🚀 How to Use
+
+Download the executable for your OS
+
+Run it (double-click)
+
+Paste Job Description once
+
+Select ATS Profile (IT / Non-IT)
+
+Optimize CV automatically
+
+Export as:
+
+PDF (Modern / Europass)
+
+DOCX
+
+ATS-friendly .txt
