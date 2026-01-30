@@ -229,5 +229,5 @@ chmod +x dist/cvbuilder
 
 ### Rezultatul va fi în:
 ``` bash
-dist/CVBuilderATS/
+dist/cvbulder/
 ```
