@@ -1,6 +1,6 @@
 # CV Builder – Modern (ATS-Friendly) & Europass
 
-🚀 **CV Builder** is a Streamlit-based web application that helps you **create, optimize, import, and export CVs** in two professional formats:
+🚀 **CV Builder** is a **desktop, offline-first CV generator** focused on **ATS (Applicant Tracking System) optimization**. Is a Streamlit-based web application that helps you **create, optimize, import, and export CVs** in two professional formats:
 
 - **Modern (ATS-Friendly)** – optimized for Applicant Tracking Systems and recruiters
 - **Europass (Complete)** – compliant with the official Europass structure
@@ -11,6 +11,16 @@ The app supports **PDF & DOCX autofill**, **offline ATS optimization**, **job-sp
 
 ## ✨ Key Features
 
+- ✅ **ATS-friendly CV builder (Modern format)**
+- ✅ **Europass full editor**
+- ✅ **Offline Job Description Analyzer**
+- ✅ **Keyword coverage & missing keyword detection**
+- ✅ **Auto-apply keywords into CV**
+- ✅ **Domain-based ATS profiles (IT & Non-IT)**
+- ✅ **EN / RO bilingual support**
+- ✅ **No cloud, no tracking, no login**
+- ✅ **Standalone executables (no Python required)**
+  
 ### 🧩 CV Editing
 
 - Full CRUD support (Add / Edit / Delete) for:
@@ -36,24 +46,32 @@ The app supports **PDF & DOCX autofill**, **offline ATS optimization**, **job-sp
     - **PDF** (eJobs, Europass, classic CV layouts)
     - **DOCX**
 - Smart autofill engine:
-    - fixes duplicated characters from PDFs (`CCoossmmiinn → Cosmin`)
+    - fixes duplicated characters from PDFs
     - ignores platform footers (e.g. `www.ejobs.ro`)
     - safe merge (never overwrites manually filled fields)
 
 ---
 
-### 🤖 ATS Optimizer (Offline)
+## 🧠 ATS Intelligence
 
-- Editable **ATS Profiles (YAML)**
-- Offline **Job Description Analyzer**
-- Keyword matching & coverage score
-- Missing keywords detection
-- Bullet rewrite templates
-- Visual ATS score dashboard
+CVBuilder uses:
 
-> 🔐 No external APIs. Everything runs locally/offline.
-> 
+- **Core libraries** (common verbs, metrics, templates)
+- **Domain libraries** (Cyber Security, System Admin, Accounting, HR, Marketing, etc.)
+- **Profile YAMLs** that automatically merge:
+    
+    ```
+    Core Library
+      + Domain Library
+        + Selected Profile
+    
+    ```
+    
+This ensures:
 
+- Relevant keywords
+- ATS-safe phrasing
+- Consistent structure
 ---
 
 ### 📤 Export Options
@@ -75,31 +93,30 @@ The app supports **PDF & DOCX autofill**, **offline ATS optimization**, **job-sp
 
 ---
 
-## 🧠 ATS Profiles
+## 🧩 Supported Domains (Examples)
 
-ATS profiles are stored as editable YAML files:
+### IT
 
-```
-ats_profiles/
+- Cyber Security
+- SOC Analyst
+- System Administrator
+- Network Administrator
+- Cloud Security
+- AppSec
+- DFIR / Incident Response
+- Data Analyst
 
-```
+### Non-IT
 
-Examples:
+- Accounting / Finance
+- Project Management
+- HR / Recruiting
+- Marketing / Growth
+- Sales (B2B)
+- Customer Support
+- Operations / Supply Chain
 
-- `cyber_security.yaml`
-- `network_administrator.yaml`
-- `cloud_engineer.yaml`
-- `devops_platform_engineering.yaml`
-
-Each profile defines:
-
-- job titles
-- keywords (structured & categorized)
-- action verbs
-- metrics
-- bullet rewrite templates
-
-👉 Profiles can be **selected, previewed, edited, and duplicated directly from the UI**.
+All profiles support **English & Romanian**.
 
 ---
 
@@ -129,6 +146,15 @@ cvbuilderats/
 └── README.md
 
 ```
+---
+
+## 🔒 Privacy & Security
+
+- ✔ Runs **100% locally**
+- ✔ No data leaves your machine
+- ✔ No telemetry
+- ✔ No API calls
+- ✔ Safe for confidential CVs
 
 ---
 
@@ -164,6 +190,8 @@ streamlit run app.py
 2. Go to [https://streamlit.io/cloud](https://streamlit.io/cloud)
 3. Select the repo and `app.py`
 4. Deploy 🚀
+
+   ### Demo ###: https://cvbuilder-v2.streamlit.app/
 
 ✅ Fully compatible with Streamlit Cloud.
 
@@ -260,3 +288,11 @@ Download the latest **ready-to-run executables** here:
     - PDF (Modern / Europass)
     - DOCX
     - ATS-friendly `.txt`
+
+---
+
+## 📌 Notes
+
+- Antivirus software may warn on unsigned executables (false positive).
+- If blocked on Windows, click **“More info → Run anyway”**.
+- Linux: `chmod +x CVBuilder` if needed.
