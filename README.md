@@ -232,37 +232,31 @@ chmod +x dist/cvbuilder
 dist/cvbulder/
 ```
 
-## 🖥 Desktop Executables (Recommended)
+## 🖥 Desktop Executables
 
-Download the latest ready-to-run executables here:
+Download the latest **ready-to-run executables** here:
 
-### 🔗 Windows & Linux builds (Mega.nz)
-👉 https://mega.nz/folder/zxYx3Dqa#X85rmbOzS_Oy_aUEdwUg4A
+🔗 **Windows & Linux builds (Mega.nz)**
 
-Available files
+👉 [https://mega.nz/folder/zxYx3Dqa#X85rmbOzS_Oy_aUEdwUg4A](https://mega.nz/folder/zxYx3Dqa#X85rmbOzS_Oy_aUEdwUg4A)
 
-Windows: CVBuilder.exe
+### Available files
 
-Linux: CVBuilder (AppImage / binary)
+- **Windows**: `CVBuilder.exe`
+- **Linux**: `CVBuilder` (AppImage / binary)
 
 ⚠️ No Python installation required.
 
-### 🚀 How to Use
+---
 
-Download the executable for your OS
+## 🚀 How to Use
 
-Run it (double-click)
-
-Paste Job Description once
-
-Select ATS Profile (IT / Non-IT)
-
-Optimize CV automatically
-
-Export as:
-
-PDF (Modern / Europass)
-
-DOCX
-
-ATS-friendly .txt
+1. Download the executable for your OS
+2. Run it (double-click)
+3. Paste **Job Description once**
+4. Select **ATS Profile** (IT / Non-IT)
+5. Optimize CV automatically
+6. Export as:
+    - PDF (Modern / Europass)
+    - DOCX
+    - ATS-friendly `.txt`
