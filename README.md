@@ -227,7 +227,7 @@ python3 -m PyInstaller ./cvbuilderats_linux.spec --noconfirm --clean
 chmod +x dist/cvbuilder
 ```
 
-### Rezult 
+### The results are found in: 
 ``` bash
 dist/cvbulder/
 ```
